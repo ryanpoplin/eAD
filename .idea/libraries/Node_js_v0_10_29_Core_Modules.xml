@@ -1,0 +1,51 @@
+<component name="libraryTable">
+  <library name="Node.js v0.10.29 Core Modules" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="Node.js Core Modules" />
+      <option name="frameworkVersion" value="0.10.29" />
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/path.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/punycode.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/net.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/os.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/https.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/module.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/fs.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/http.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/timers.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/tls.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/string_decoder.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/sys.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/repl.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/stream.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/querystring.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/readline.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/zlib.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/vm.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/util.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/url.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/tty.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_debugger.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_linklist.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_stream_duplex.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/buffer.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/assert.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/cluster.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/child_process.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_stream_readable.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_stream_passthrough.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_stream_writable.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_stream_transform.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/domain.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/dns.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/freelist.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/events.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/constants.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/console.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/dgram.js" />
+      <root url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/crypto.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
