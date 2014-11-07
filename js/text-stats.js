@@ -143,11 +143,6 @@ function update_stats()
         catch (er){}
     }
 
-    console.log("Syllables: " + syllables);
-    console.log("Sentences: " + sentences);
-    console.log("Words Per Sentence: " + words_per_sentence);
-    console.log("Average Word Length: " + Math.round(total_words_length / words_count));
-
 }
 
 $(function() {
@@ -156,3 +151,8 @@ $(function() {
     $("#tts").focus();
 
 });
+
+console.log("Syllables: " + syllables);
+console.log("Sentences: " + sentences);
+console.log("Average Sentence Length: " + words_per_sentence);
+console.log("Average Word Length: " + Math.round(total_words_length / words_count));
