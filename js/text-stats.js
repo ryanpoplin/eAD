@@ -15,11 +15,11 @@ function analyzeText(text) {
     } catch (er) {};
     try {
         sentences -= textString.match(/\s\w\w?\./g).length;
-    } catch (er){};
+    } catch (er) {};
     textString = textString.replace(/(\.\s*\w)/ig, function($0) { return $0.toLowerCase(); });
     var shorts;
     try {
-        shorts = str.match(/(can|don|it|wouldn|aren|he|she|i|you|we|won|didn|ain|isn|doesn)['â€˜â€™](t|s|m|re|ll)/ig).length;
+        shorts = textString.match(/(can|don|it|wouldn|aren|he|she|i|you|we|won|didn|ain|isn|doesn)['â€˜â€™](t|s|m|re|ll)/ig).length;
     } catch (er) {
         shorts = 0;
     }
@@ -31,12 +31,12 @@ function analyzeText(text) {
     var totalWordsLength = 0;
     for (var key in wordsArray)
         totalWordsLength += wordsArray[key].length;
-    var avgSentenceLength = Math.round(totalWordsLength / wordsCount);
+    var avgWordLength = Math.round(totalWordsLength / wordsCount);
     var valArr = [sentences, wordsCount, wordsPerSentence, ];
     console.log("Sentences: " + sentences);
     console.log("Words: " + wordsCount);
     console.log("Average Sentence Length: " + wordsPerSentence);
-    console.log("Average Word Length: " + avgSentenceLength);
+    console.log("Average Word Length: " + avgWordLength);
     // return valArr;
 }
 $(function() {

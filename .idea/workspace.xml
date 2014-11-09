@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d2f5093-35d7-4e24-bb49-be7ce0524f47" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/text-stats.js" afterPath="$PROJECT_DIR$/js/text-stats.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="excepAppsData.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +48,8 @@
       <file leaf-file-name="text-stats.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/text-stats.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66573817" vertical-offset="47" max-vertical-offset="765">
-              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.68941504" vertical-offset="0" max-vertical-offset="765">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -305,8 +304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/text-stats.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66573817" vertical-offset="47" max-vertical-offset="765">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.68941504" vertical-offset="0" max-vertical-offset="765">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding />
         </state>
       </provider>
