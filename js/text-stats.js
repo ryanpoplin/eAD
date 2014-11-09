@@ -25,7 +25,7 @@ function analyzeText(text) {
     }
     textString = textString.replace(/[,\.\\\/\(\)\:\"\';\[\]â€¦â€˜â€™â€žâ€œâ€Â«Â»â€”â€“-]/g, " ");
     textString = textString.replace(/\s\s+/g, " ").replace(/^\s+|\s+$/g, "");
-    var wordsArray = str.split(' ');
+    var wordsArray = textString.split(' ');
     var wordsCount = wordsArray.length - shorts;
     var wordsPerSentence = Math.round(wordsCount / sentences);
     var totalWordsLength = 0;
@@ -37,7 +37,7 @@ function analyzeText(text) {
     console.log("Words: " + wordsCount);
     console.log("Average Sentence Length: " + wordsPerSentence);
     console.log("Average Word Length: " + avgWordLength);
-    // return valArr;
+    return valArr;
 }
 $(function() {
     $("#analyze").click(function() {
