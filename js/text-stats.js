@@ -1,45 +1,46 @@
-function update_stats() {
-    var str = $("#tts").val();
-    if (str.replace(/\s*/g,'').length === 0) {
+function analyzeText(text) {
+    var textString = text;
+    if (textString.replace(/\s*/g,'').length == 0) {
         return;
     }
-    str = str.replace(/(\.\.\.|!|\?)/g, ".").replace(/\s*$/g, "");
+    textString = textString.replace(/(\.\.\.|!|\?)/g, ".").replace(/\s*$/g, 0);
     var sentences;
     try {
-        // how many sentences are there?
-        sentences = str.match(/\./g).length + (str.charAt(str.length - 1) === '.'?0:1);
+        sentences = textString.match(/\./g).length + (str.charAt(str.length - 1) === '.'?0:1);
     } catch (er) {
         sentences = 1;
     };
     try {
-        sentences -= str.match(/\.\w\w?\./g).length;
+        sentences -= textString.match(/\.\w\w?\./g).length;
     } catch (er) {};
     try {
-        sentences -= str.match(/\s\w\w?\./g).length;
+        sentences -= textString.match(/\s\w\w?\./g).length;
     } catch (er){};
-    str = str.replace(/(\.\s*\w)/ig, function($0) { return $0.toLowerCase(); });
+    textString = textString.replace(/(\.\s*\w)/ig, function($0) { return $0.toLowerCase(); });
     var shorts;
     try {
         shorts = str.match(/(can|don|it|wouldn|aren|he|she|i|you|we|won|didn|ain|isn|doesn)['â€˜â€™](t|s|m|re|ll)/ig).length;
     } catch (er) {
         shorts = 0;
     }
-    str = str.replace(/[,\.\\\/\(\)\:\"\';\[\]â€¦â€˜â€™â€žâ€œâ€Â«Â»â€”â€“-]/g, " ");
-    str = str.replace(/\s\s+/g, " ").replace(/^\s+|\s+$/g, "");
-    var words_array = str.split(' ');
-    var words_count = words_array.length - shorts;
-    var words_per_sentence = Math.round(words_count / sentences);
-    var total_words_length = 0;
-    for (var key in words_array)
-        total_words_length += words_array[key].length;
+    textString = textString.replace(/[,\.\\\/\(\)\:\"\';\[\]â€¦â€˜â€™â€žâ€œâ€Â«Â»â€”â€“-]/g, " ");
+    textString = textString.replace(/\s\s+/g, " ").replace(/^\s+|\s+$/g, "");
+    var wordsArray = str.split(' ');
+    var wordsCount = wordsArray.length - shorts;
+    var wordsPerSentence = Math.round(wordsCount / sentences);
+    var totalWordsLength = 0;
+    for (var key in wordsArray)
+        totalWordsLength += wordsArray[key].length;
+    var avgSentenceLength = Math.round(totalWordsLength / wordsCount);
+    var valArr = [sentences, wordsCount, wordsPerSentence, ];
     console.log("Sentences: " + sentences);
-    console.log("Words: " + words_count);
-    console.log("Average Sentence Length: " + words_per_sentence);
-    console.log("Average Word Length: " + Math.round(total_words_length / words_count));
+    console.log("Words: " + wordsCount);
+    console.log("Average Sentence Length: " + wordsPerSentence);
+    console.log("Average Word Length: " + avgSentenceLength);
+    // return valArr;
 }
 $(function() {
     $("#analyze").click(function() {
-        update_stats();
+        analyzeText($("#tts").val());
     });
-    $("#tts").focus();
 });
