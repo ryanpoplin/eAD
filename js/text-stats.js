@@ -1,12 +1,12 @@
-function analyzeText(text) {
-    var textString = text;
+function analyzeText() {
+    var textString = $("#tts").val();
     if (textString.replace(/\s*/g,'').length == 0) {
         return;
     }
     textString = textString.replace(/(\.\.\.|!|\?)/g, ".").replace(/\s*$/g, 0);
     var sentences;
     try {
-        sentences = textString.match(/\./g).length + (str.charAt(str.length - 1) === '.'?0:1);
+        sentences = textString.match(/\./g).length + (textString.charAt(textString.length - 1) === '.'?0:1);
     } catch (er) {
         sentences = 1;
     };
@@ -33,14 +33,14 @@ function analyzeText(text) {
         totalWordsLength += wordsArray[key].length;
     var avgWordLength = Math.round(totalWordsLength / wordsCount);
     var valArr = [sentences, wordsCount, wordsPerSentence, ];
-    console.log("Sentences: " + sentences);
-    console.log("Words: " + wordsCount);
-    console.log("Average Sentence Length: " + wordsPerSentence);
-    console.log("Average Word Length: " + avgWordLength);
-    return valArr;
+    console.log("Sentences: " + valArr[0]);
+    console.log("Words: " + valArr[1]);
+    console.log("Average Sentence Length: " + valArr[2]);
+    console.log("Average Word Length: " + valArr[3]);
+    // return valArr;
 }
 $(function() {
     $("#analyze").click(function() {
-        analyzeText($("#tts").val());
+        analyzeText();
     });
 });
