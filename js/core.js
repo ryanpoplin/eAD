@@ -35,7 +35,7 @@
 
         client.draw(sentenceCount, document.getElementById("sentence-count"), {
             chartType: "areachart",
-            title: "Daily Sentence Count"
+            title: "Sentence Count"
         });
 
         client.draw(averageWordLength, document.getElementById("average-word-length"), {
@@ -45,5 +45,5 @@
 
         client.draw(wordCount, document.getElementById("word-count"), {
             chartType: "areachart",
-            title: "Daily Word Count"
+            title: "Word Count"
         });
