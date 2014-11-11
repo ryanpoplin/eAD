@@ -13,7 +13,7 @@
             interval: "daily"
         });
 
-        var averageSentenceLength = new Keen.Query("average", {
+        var averageWordLength = new Keen.Query("average", {
             eventCollection: "sentence_spoken",
             targetProperty: "averageWordLength",
             timeframe: "this_week",
@@ -21,7 +21,7 @@
         });
 
 
-        var sentenceCount = new Keen.Query("sum", {
+        var wordCount = new Keen.Query("sum", {
             eventCollection: "sentence_spoken",
             targetProperty: "wordsCount",
             timeframe: "this_week",
@@ -38,12 +38,12 @@
             title: "Daily Sentence Count"
         });
 
-        client.draw(averageSentenceLength, document.getElementById("average-word-length"), {
+        client.draw(averageWordLength, document.getElementById("average-word-length"), {
             chartType: "barchart",
             title: "Average Word Length"
         });
 
-        client.draw(sentenceCount, document.getElementById("word-count"), {
+        client.draw(wordCount, document.getElementById("word-count"), {
             chartType: "areachart",
             title: "Daily Word Count"
         });
