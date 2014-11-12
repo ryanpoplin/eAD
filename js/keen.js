@@ -1,3 +1,5 @@
+// Keen Client Init...
+
 var client = new Keen({
     projectId: "5461ced93831445dbeea28d0",       // String (required)
     writeKey: "76ebbda1640637a38f73ffa4e441fa335c4db5d256afaab9e2a5fb28cf9b6cfad6d3424fa4261b43d719173fde21ecbecedd39347aaa36897d9275104e142d7f7983c971093eb4025e918d39446b5ee30f8ed3f7d552f133df894b15566b231531d316ed15c86758923305d333300caa", // String (required for sending data)
